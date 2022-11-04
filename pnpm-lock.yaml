@@ -13,6 +13,7 @@ specifiers:
   '@tarojs/runtime': 3.5.7
   '@tarojs/shared': 3.5.7
   '@tarojs/taro': 3.5.7
+  '@tarojs/taro-loader': 3.5.7
   '@tarojs/webpack5-runner': 3.5.7
   '@types/webpack-env': ^1.13.6
   '@vue/babel-preset-jsx': ^1.2.4
@@ -39,6 +40,7 @@ dependencies:
   '@tarojs/runtime': 3.5.7
   '@tarojs/shared': 3.5.7
   '@tarojs/taro': 3.5.7_vue@2.6.12
+  '@tarojs/taro-loader': 3.5.7_vue@2.6.12
   vue: 2.6.12
   vue-template-compiler: 2.6.12
 
@@ -2026,7 +2028,6 @@ packages:
       - '@types/webpack-dev-server'
       - supports-color
       - vue
-    dev: true
 
   /@tarojs/taro/3.5.7_vue@2.6.12:
     resolution: {integrity: sha512-wjwzecv7adfGbsE5Lny/TqFoJkszJ4iivx1h1ZtasSlASFpl4bveKTKM2oVe6JylcNcF0eswb1LkdXwCXmJ2Vg==}
@@ -3403,8 +3404,6 @@ packages:
       babel-register: 6.26.0
       babylon: 6.18.0
       require-from-string: 2.0.2
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /babel-plugin-syntax-class-properties/6.13.0:
@@ -3647,7 +3646,6 @@ packages:
 
   /big.js/5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
-    dev: true
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -5375,7 +5373,6 @@ packages:
   /emojis-list/3.0.0:
     resolution: {integrity: sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==}
     engines: {node: '>= 4'}
-    dev: true
 
   /encodeurl/1.0.2:
     resolution: {integrity: sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==}
@@ -7984,7 +7981,6 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.7
-    dev: true
 
   /json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
@@ -8282,7 +8278,6 @@ packages:
       big.js: 5.2.2
       emojis-list: 3.0.0
       json5: 1.0.1
-    dev: true
 
   /loader-utils/2.0.3:
     resolution: {integrity: sha512-THWqIsn8QRnvLl0shHYVBN9syumU8pYWEHPTmkiVGd+7K5eFNVSY6AJhRvgGF70gg1Dz+l/k8WicvFCxdEs60A==}
@@ -8527,7 +8522,7 @@ packages:
       decamelize: 1.2.0
       loud-rejection: 1.6.0
       map-obj: 1.0.1
-      minimist: 1.2.5
+      minimist: 1.2.7
       normalize-package-data: 2.5.0
       object-assign: 4.1.1
       read-pkg-up: 1.0.1
@@ -8738,7 +8733,6 @@ packages:
 
   /minimist/1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
-    dev: true
 
   /miniprogram-api-typings/3.6.0:
     resolution: {integrity: sha512-xwK3PzhhxnfWqDfBikHLdAbj7Wy4F887nBcQrzwuF758Fw2qC4ivpKPL9t0uJZk5QYnU28+NqA7Q3lzYGMHQnA==}
@@ -10260,7 +10254,7 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.8
-      minimist: 1.2.5
+      minimist: 1.2.7
       strip-json-comments: 2.0.1
     dev: true
 
