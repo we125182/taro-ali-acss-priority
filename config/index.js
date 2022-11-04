@@ -1,3 +1,4 @@
+const path = require('path');
 const config = {
   projectName: 'taro-vue2-js',
   date: '2022-11-4',
@@ -9,7 +10,9 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: `dist/${process.env.TARO_ENV}`,
-  plugins: [],
+  plugins: [
+    path.join(__dirname, 'ali-acss-plugin.js'),
+  ],
   defineConstants: {
   },
   copy: {
