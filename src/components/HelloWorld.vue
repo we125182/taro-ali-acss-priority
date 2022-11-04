@@ -10,7 +10,7 @@ import './index.less'
 export default {
   data () {
     return {
-      msg: '红色'
+      msg: '此处应为红色'
     }
   }
 }
