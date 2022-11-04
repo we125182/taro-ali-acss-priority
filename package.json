@@ -1,0 +1,53 @@
+{
+  "name": "taro-vue2-js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ali-acss-priority",
+  "templateInfo": {
+    "name": "default",
+    "typescript": false,
+    "css": "less"
+  },
+  "scripts": {
+    "dev:alipay": "npm run build:alipay -- --watch",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build:alipay": "taro build --type alipay",
+    "build:weapp": "taro build --type weapp"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "dependencies": {
+    "@babel/runtime": "^7.7.7",
+    "@tarojs/components": "3.5.7",
+    "@tarojs/helper": "3.5.7",
+    "@tarojs/plugin-platform-weapp": "3.5.7",
+    "@tarojs/plugin-platform-alipay": "3.5.7",
+    "@tarojs/router": "3.5.7",
+    "@tarojs/runtime": "3.5.7",
+    "@tarojs/shared": "3.5.7",
+    "@tarojs/taro": "3.5.7",
+    "@tarojs/plugin-framework-vue2": "3.5.7",
+    "vue-template-compiler": "2.6.12",
+    "vue": "2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@tarojs/cli": "3.5.7",
+    "@types/webpack-env": "^1.13.6",
+    "webpack": "5.69.0",
+    "@tarojs/webpack5-runner": "3.5.7",
+    "babel-preset-taro": "3.5.7",
+    "css-loader": "3.4.2",
+    "style-loader": "1.3.0",
+    "@vue/babel-preset-jsx": "^1.2.4",
+    "vue-loader": "^15.9.2",
+    "eslint-plugin-vue": "^6.x",
+    "eslint-config-taro": "3.5.7",
+    "eslint": "^8.12.0",
+    "stylelint": "^14.4.0"
+  }
+}
