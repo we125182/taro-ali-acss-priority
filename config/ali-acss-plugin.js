@@ -4,10 +4,20 @@ const { RawSource } = sources;
 const COMMON_STYLE = 'common.acss';
 const APP_STYLE = 'app.acss';
 
-export default (ctx) => {
+/**
+ * fix: 支付宝common.acss优先级小于app.acss https://github.com/NervJS/taro/issues/12778
+ * @param {Object} ctx 插件上下文
+ * @param {Object} options 配置
+ * @returns
+ */
+export default function (ctx, options = { platform: 'alipay'}) {
+
+  if (process.env.TARO_ENV !== options.platform) {
+    return
+  }
 
   /**
-   *
+   * 修改编译后文件
    */
   ctx.modifyBuildAssets(({ assets }) => {
     /**
